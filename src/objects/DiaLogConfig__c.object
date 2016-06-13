@@ -58,6 +58,15 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Logging_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enables / Disables Logging for this mode</description>
+        <externalId>false</externalId>
+        <label>Logging Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Message_API_Field__c</fullName>
         <description>API Field Name for Message Information</description>
         <externalId>false</externalId>
