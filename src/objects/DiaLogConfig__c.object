@@ -78,6 +78,18 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Number_of_days_to_delete_log__c</fullName>
+        <description>Delete Log Records after this amount of days. Leave empty for no deletion.</description>
+        <externalId>false</externalId>
+        <label>Number of days to delete log</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Severity_API_Field__c</fullName>
         <description>Severity API Field</description>
         <externalId>false</externalId>

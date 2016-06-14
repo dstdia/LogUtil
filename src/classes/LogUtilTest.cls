@@ -22,8 +22,7 @@ private class LogUtilTest {
         try {
           insert acc;
           System.assert(false);
-        }   catch (Exception e) 
-        {
+        }   catch (Exception e) {
             LogUtil inst = new LogUtil();
             
             inst.info('testErrorClass Error', 'Error in Account Insert'); 
