@@ -12,9 +12,7 @@ private class LogUtilTest {
 
     public static Account acc;
     static
-    {
-        LogUtil.initialSetup();
-        
+    {        
         acc = new Account();
     }
 
@@ -28,9 +26,12 @@ private class LogUtilTest {
         {
             LogUtil inst = new LogUtil();
             
-            inst.info('testErrorClass Error', e, 'Error in Account Insert'); 
-            inst.warn('testErrorClass Error', e, 'Error in Account Insert'); 
-            inst.error('testErrorClass Error', e, 'Error in Account Insert'); 
+            inst.info('testErrorClass Error', 'Error in Account Insert'); 
+            inst.warn('testErrorClass Error', 'Error in Account Insert'); 
+            inst.error('testErrorClass Error', 'Error in Account Insert');             
+            inst.info('testErrorClass Error', 'Error in Account Insert',e); 
+            inst.warn('testErrorClass Error', 'Error in Account Insert',e); 
+            inst.error('testErrorClass Error', 'Error in Account Insert',e); 
             System.assert(true);                      
         }
     }
@@ -44,9 +45,9 @@ private class LogUtilTest {
         {
             LogUtil inst = new LogUtil('Custom_ErrorLog');
             
-            inst.info('testErrorClass Error', e, 'Error in Account Insert'); 
-            inst.warn('testErrorClass Error', e, 'Error in Account Insert'); 
-            inst.error('testErrorClass Error', e, 'Error in Account Insert'); 
+            inst.info('testErrorClass Error', 'Error in Account Insert'); 
+            inst.warn('testErrorClass Error', 'Error in Account Insert'); 
+            inst.error('testErrorClass Error', 'Error in Account Insert'); 
             System.assert(true);                     
         }
     }
@@ -60,9 +61,9 @@ private class LogUtilTest {
         {
             LogUtil inst = new LogUtil('NotAvailable_ErrorLog');
             
-            inst.info('testErrorClass Error', e, 'Error in Account Insert'); 
-            inst.warn('testErrorClass Error', e, 'Error in Account Insert'); 
-            inst.error('testErrorClass Error', e, 'Error in Account Insert'); 
+            inst.info('testErrorClass Error', 'Error in Account Insert'); 
+            inst.warn('testErrorClass Error', 'Error in Account Insert'); 
+            inst.error('testErrorClass Error', 'Error in Account Insert'); 
             System.assert(true);           
         }
     }
@@ -84,9 +85,9 @@ private class LogUtilTest {
             LogUtil inst = new LogUtil('NotAvailable_ErrorLog');
             e.setMessage(toLongString);
             
-            inst.info('testErrorClass Error testErrorClass Error testErrorClass Error testErrorClass Error', e, 'Error in Account Insert'); 
-            inst.warn('testErrorClass Error testErrorClass Error testErrorClass Error testErrorClass Error', e, 'Error in Account Insert'); 
-            inst.error(toLongString, e,toLongString); 
+            inst.info('testErrorClass Error testErrorClass Error testErrorClass Error testErrorClass Error', 'Error in Account Insert', e); 
+            inst.warn('testErrorClass Error testErrorClass Error testErrorClass Error testErrorClass Error', 'Error in Account Insert', e); 
+            inst.error(toLongString, toLongString,e); 
             System.assert(true);           
         }
     }

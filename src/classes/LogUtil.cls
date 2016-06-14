@@ -44,6 +44,7 @@ public class LogUtil {
         if (configMap.get(mode) == null) {
 
             initialSetup();
+            configMap = DiaLogConfig__c.getAll();
         }
 
         configMode = configMap.get(mode);
@@ -60,8 +61,8 @@ public class LogUtil {
         mode = logMode;   
         configMap = DiaLogConfig__c.getAll();
         
-        if (configMap.get(mode) == null)
-        {
+        if (configMap.get(mode) == null) {
+            
             mode = 'Default';   
             System.debug('Error Mode ' + mode + ' not available. Using default diasyslog config.'); 
         }
@@ -69,6 +70,7 @@ public class LogUtil {
         if (configMap.get(mode) == null) {
 
             initialSetup();
+            configMap = DiaLogConfig__c.getAll();
         }
             
         configMode = configMap.get(mode);
