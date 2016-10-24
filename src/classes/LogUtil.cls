@@ -269,7 +269,7 @@ public class LogUtil {
      * @param      sObjectApiName  The sObject api name
      * @param      jSONSObject     The serialized error as a json object
      */
-    @future
+    //@future
     private static void insertSOjects(String sObjectApiName, String jSONSObject)
     {
         Map<String, Object> fieldMap = (Map<String, Object>)JSON.deserializeUntyped(jSONSObject);
@@ -335,7 +335,13 @@ public class LogUtil {
             mail.setSubject('Log from Org : ' + UserInfo.getOrganizationName());
             mail.setPlainTextBody(debugString);
 
-            Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });             
+            try {
+
+                Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });             
+            } catch (Exception e) {
+
+                System.debug('Error while sending Log email: ' + e.getMessage());
+            }
         }
     }    
 
