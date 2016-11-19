@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Additional_Information_API_Field__c</fullName>
+        <description>API Field Name for Additional Information</description>
+        <externalId>false</externalId>
+        <label>Additional Information API Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Admin_Email_Addresses__c</fullName>
+        <description>Email Addresses where the debug emails are sent to.</description>
+        <externalId>false</externalId>
+        <label>Admin Email Addresses</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email_Notification__c</fullName>
+        <description>If checked, the Email notification is enabled.</description>
+        <externalId>false</externalId>
+        <label>Email Notification</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Line_Number_API_Field__c</fullName>
+        <description>API Field Name for Line number Information</description>
+        <externalId>false</externalId>
+        <label>Line Number API Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Log_Object_Name__c</fullName>
+        <description>Name of the sObject where the log records were created.</description>
+        <externalId>false</externalId>
+        <label>Log Object Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Logging_Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Enables / Disables Logging for this mode</description>
+        <externalId>false</externalId>
+        <label>Logging Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Message_API_Field__c</fullName>
+        <description>API Field Name for Message Information</description>
+        <externalId>false</externalId>
+        <label>Message API Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_days_to_delete_log__c</fullName>
+        <description>Delete Log Records after this amount of days. Leave empty for no deletion.</description>
+        <externalId>false</externalId>
+        <label>Number of days to delete log</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Severity_API_Field__c</fullName>
+        <description>Severity API Field</description>
+        <externalId>false</externalId>
+        <label>Severity API Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Stack_Trace_API_Field__c</fullName>
+        <description>API Field Name for Stack Trace Information</description>
+        <externalId>false</externalId>
+        <label>Stack Trace API Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>System_Debug__c</fullName>
+        <externalId>false</externalId>
+        <label>System Debug</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type_API_Field__c</fullName>
+        <description>API Field Name for Type Information</description>
+        <externalId>false</externalId>
+        <label>Type API Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sObject_Logging__c</fullName>
+        <description>If checked, the sObject logging is enabled.</description>
+        <externalId>false</externalId>
+        <label>sObject Logging</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>DIA Log Configuration</label>
+    <visibility>Public</visibility>
+</CustomObject>
