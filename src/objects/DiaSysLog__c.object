@@ -21,6 +21,13 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
+<<<<<<< HEAD
+=======
+        <actionName>Follow</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+>>>>>>> 0b61c5df709b755d62ed950f2551ab811bb262c4
         <actionName>List</actionName>
         <type>Default</type>
     </actionOverrides>
